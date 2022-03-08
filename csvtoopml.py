@@ -60,7 +60,7 @@ outf.write("  <outline title=\"YouTube Subscriptions\" text=\"YouTube Subscripti
 # now process file, stripping needed info and write in opml file.
 for x in inf:
   infile = x
-  if not "Channel Id" in infile:
+  if not "Kanal-ID" in infile:
     work = infile.split(",") # always at array #3.
     if len(work) == 3:
       ochannelID = work[0];     # file might have errors but not likely.
